@@ -36,9 +36,9 @@ if st.button('Predict Heart Health'):
     query = query.reshape(1, 11)
     result=str(pipe.predict(query)[0])
     if result == 1:
-        st.header("You've a heart disease. Please, consult your doctor")
+        st.header("There's heart disease")
     else:
-        st.header("You don't have a heart disease")
+        st.header("No heart disease")
     # st.title("Your Heart Health is " + str(pipe.predict(query)[0]))
     # query = query.reshape(1, 11)
     # st.title("Your Heart Health Status is "+ str(int(pipe.predict(query)[0])))
